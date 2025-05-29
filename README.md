@@ -7,19 +7,19 @@ Basic starter template, showing how to correctly configure React Native Web usin
 ## Steps to install template
 
 1. Run in terminal
-    ```bash
+    ```sh
       git clone https://github.com/gabriel-logan/react-native-web-webpack-template.git <YOUR_PROJECT_NAME>
     ```
 1. Change `webpack.Configuration.output.publicPath` in `webpack.config.js` from `"./"` to `"/"`
       * The `.` is needed for GitHub pages deployment
 1. Update the `"name"` field in `package.json` to `<YOUR_PROJECT_NAME>` to match your project's folder name
 1. Run in terminal at project root
-    ```bash
+    ```sh
       yarn
     ```
     * `yarn` is recommended for its tooling for monorepos and dependency resolution. `react-native-web` dependencies can be much harded to deal with on `npm`
 1. Run in terminal at project root
-    ```bash
+    ```sh
       yarn web
     ```
 

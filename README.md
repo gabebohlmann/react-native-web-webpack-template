@@ -23,7 +23,6 @@ Basic starter template, showing how to correctly configure React Native Web usin
       yarn web
     ```
 
-
 ## Installation from Scratch with RN CLI
 
 First install React Native, if you already have it installed, skip this step.

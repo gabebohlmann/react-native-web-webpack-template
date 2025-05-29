@@ -4,6 +4,10 @@
 
 Basic starter template, showing how to correctly configure React Native Web using React Native Cli, using webpack and typescript.
 
+### Upgrade to React 19
+
+This branch has been upgraded to react@19 and react-navigation@7 along with all other dependencies to their latest compatible verisons. Switch to the main branch for react@18 and react-navigation@6.
+
 ## Steps to install template
 
 1. Run in terminal

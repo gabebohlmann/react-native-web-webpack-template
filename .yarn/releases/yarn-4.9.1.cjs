@@ -1,4 +1,3 @@
-// .yarn/releases/yarn-4.9.1.cjs
 #!/usr/bin/env node
 /* eslint-disable */
 //prettier-ignore

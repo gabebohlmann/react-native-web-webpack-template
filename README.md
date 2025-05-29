@@ -1,3 +1,4 @@
+<!-- README.md -->
 # React Native Cli - Webpack
 
 ## Description
@@ -7,6 +8,41 @@ Basic starter template, showing how to correctly configure React Native Web usin
 ### Upgrade to React 19
 
 This branch has been upgraded to react@19 and react-navigation@7 along with all other dependencies to their latest compatible verisons. Switch to the main branch for react@18 and react-navigation@6.
+    * upgrading from react@18 to react@19 manually requires adding this snippet to `module.rules` in `webpack.config.js`
+  
+```js
+    module: {
+      rules: [
+        {
+          test: /\.m?js$/,
+          include: [
+            path.resolve(
+              __dirname,
+              "node_modules/@react-navigation/core/lib/module"
+            ),
+            path.resolve(
+              __dirname,
+              "node_modules/@react-navigation/elements/lib/module"
+            ),
+            path.resolve(
+              __dirname,
+              "node_modules/@react-navigation/native/lib/module"
+            ),
+            path.resolve(
+              __dirname,
+              "node_modules/@react-navigation/native-stack/lib/module"
+            ),
+            // bottom-tabs doesn't error but is included for consistendcy
+            path.resolve(
+              __dirname,
+              "node_modules/@react-navigation/bottom-tabs/lib/module"
+            ),
+          ],
+          resolve: {
+            fullySpecified: false, // fix for @react-navigation@7 errors
+          },
+        },
+```
 
 ## Steps to install template
 
